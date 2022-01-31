@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  .abouttxt {
+    /* padding: 1rem; */
+    width: 90%;
+    font-size: x-large;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 80%;
+  }
+  header{
+    right: 10vw;
+  }
+}
+
+
+@media screen and (max-width:816px) {
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+
+    }
+  }
+  
