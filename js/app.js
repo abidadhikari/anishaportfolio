@@ -4,6 +4,8 @@ const mobileNav=document.querySelector(".mobilenav");
 const closeBtn=document.querySelector("#closebtn");
 const icon=document.querySelector("#burger i");
 const heroTxt=document.querySelector(".herotxt");
+const toTop=document.getElementById("totop");
+const scrollData=document.getElementById("scrolldata");
 
 const navLinks=document.querySelector("nav ul");
 const cloned=navLinks.cloneNode(true);
@@ -40,3 +42,19 @@ const closeFunc=()=>{
     icon.classList.remove("fa-times");
     heroTxt.classList.remove("notactive");
 }
+
+window.addEventListener("scroll",()=>{
+    const scrolled=document.body.scrollTop  || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    scrollData.style.width=`${scrolled/height*100}%`;
+    if(scrolled>500){
+        toTop.style.display="grid";
+    }
+    else{
+        toTop.style.display="none";
+    }
+})
+
+toTop.addEventListener("click",()=>{
+    window.scrollTo(0,0);
+})

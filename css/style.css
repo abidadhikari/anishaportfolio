@@ -17,6 +17,25 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+#totop{
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(220, 20, 60, 0.507);
+  border-radius: 8px;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 120;
+  right:5vw;
+  bottom:5vh;
+  display: none;
+}
+#totop:hover{
+  background-color: crimson;
+}
 .hero {
   min-height: 100vh;
   max-height: 100vh;
@@ -38,15 +57,29 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 nav ul li a {
   text-transform: capitalize;
   font-family: cursive;
   color: whitesmoke;
   text-decoration: none;
-
+  padding-bottom: 8px;
   font-size: large;
+  position: relative;
+}
+nav ul li a::after{
+  content: "";
+  height:5px;
+  width: 0px;
+  background-color: rgb(236, 18, 18);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover::after{
+  width: 100%;
 }
 
 .mobilenav {
@@ -334,3 +367,18 @@ section {
   background: #555;
 }
 
+
+
+.scrollindicator{
+  position: fixed;
+  z-index:120;
+  height: 1vh;
+  width:100%;
+  /* background-color: darkgray; */
+}
+#scrolldata{
+  width:0%;
+  height:100%;
+  background-color: crimson;
+  /* transition: all 0.3s ease; */
+}
