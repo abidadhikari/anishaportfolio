@@ -382,3 +382,19 @@ section {
   background-color: crimson;
   /* transition: all 0.3s ease; */
 }
+
+
+footer{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.love span{
+  color: red;
+  font-weight: 900;
+}
+.love{
+  margin-bottom: 1rem;
+}
