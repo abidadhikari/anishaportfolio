@@ -466,6 +466,24 @@ section {
   margin: 1rem 0 0 auto;
 }
 
+.socialmedia{
+  height: 10vh;
+  width: max-content;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+}
+.socialmedia a{
+  font-size:2rem;
+  margin: 0 0.8rem;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.socialmedia a:hover{
+  transform: scale(1.5);
+}
 footer{
   padding: 1rem;
   display: flex;

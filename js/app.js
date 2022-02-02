@@ -6,6 +6,9 @@ const icon=document.querySelector("#burger i");
 const heroTxt=document.querySelector(".herotxt");
 const toTop=document.getElementById("totop");
 const scrollData=document.getElementById("scrolldata");
+const currLength=document.getElementById("length");
+const message=document.getElementById("message");
+
 
 const navLinks=document.querySelector("nav ul");
 const cloned=navLinks.cloneNode(true);
@@ -57,4 +60,15 @@ window.addEventListener("scroll",()=>{
 
 toTop.addEventListener("click",()=>{
     window.scrollTo(0,0);
+})
+
+const handleChange=()=>{
+    currLength.innerText=message.value.length
+} 
+
+message.addEventListener("keyup",()=>{
+    handleChange();
+})
+message.addEventListener("change",()=>{
+    handleChange();
 })
