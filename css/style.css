@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: sans-serif,serif;
   background-color: black;
 
   color: aliceblue;
@@ -480,6 +480,11 @@ section {
   padding: 0.5rem;
   border-radius: 8px;
   transition: all 0.3s ease;
+}
+.socialmedia a img{
+  border-radius: 8px;
+  transform: translateY(10%);
+  filter: brightness(0) invert(1);
 }
 .socialmedia a:hover{
   transform: scale(1.5);

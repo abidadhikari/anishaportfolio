@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>Anisha Dhakal</title>
     <link
       rel="shortcut icon"
@@ -26,6 +31,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
   </head>
   <body>
     <div id="totop">
@@ -73,11 +79,9 @@
         <br> -->
         Howdy. Its me Anisha Dhakal. A passionate developer/programmer and
         learner from Nepal. I am a web developer with an art and design
-        background. My current area of interest and
-        exploration is web development, programming and IT. I began project by
-        throughly researching and then developing my ideas through creative
-        thinking.
-         <!-- Having been a paasionate student in the field of web
+        background.I began project by throughly
+        researching and then developing my ideas through creative thinking.
+        <!-- Having been a paasionate student in the field of web
         development, I feel like exploring more about programming, integrating
         the fine background about the basic to higher level of computer science
         and programming through A2 Web. My current area of interest and
@@ -119,10 +123,76 @@
 
     <section id="skills">
       <div class="sectiontitle"><h2>Skills</h2></div>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiperdata sd sd1">
+              <div class="sdtxt">
+                <h3> Web Development <i class="fas fa-laptop-code"></i> </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam nulla ducimus autem pariatur tenetur nesciunt magni veniam eveniet, asperiores incidunt error praesentium soluta quidem maiores perspiciatis et non hic.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="swiper-slide"><div class="swiperdata sd sd2">
+            <div class="sdtxt">
+              <h3> Art and Design <i class="fas fa-paint-brush"></i></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam nulla ducimus autem pariatur tenetur nesciunt magni veniam eveniet, asperiores incidunt error praesentium soluta quidem maiores perspiciatis et non hic.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"><div class="swiperdata sd sd3">
+            <div class="sdtxt">
+              <h3>Photoshop <i class="fas fa-camera-retro"></i></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam nulla ducimus autem pariatur tenetur nesciunt magni veniam eveniet, asperiores incidunt error praesentium soluta quidem maiores perspiciatis et non hic.</p>
+            </div>
+          </div></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swnav"></div>
+        <div class="swiper-button-next swnav"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
     </section>
+
     <section id="education">
       <div class="sectiontitle"><h2>Education</h2></div>
+      <div class="timeline">
+        <!-- <div class="container left">
+          <div class="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div> -->
+        <div class="container left">
+          <div class="content">
+            <h2>2018 - 2020</h2>
+            <p>Science (Computer Science)
+              <br/>The Times International College<br/>
+            <strong>National Examinations Board (NEB)</strong></p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2021 - current</h2>
+            <p>Bachelor in Computer Science and Information Technology<br/>
+            Swastik College of IT<br/>
+          <strong>Tribhuvan University (TU)</strong></p>
+          </div>
+        </div>
+        
+      </div>
     </section>
+
     <section id="contact">
       <div class="sectiontitle"><h2>Contact</h2></div>
       <div class="contact-container">
@@ -157,11 +227,17 @@
 
       <div class="socialmedia">
         Get Connected :
-        <!-- <a href="#"><i class="fab fa-facebook" target="_blank"></i></a> -->
+        <a href="https://www.sololearn.com/profile/21872314/" target="_blank"
+          ><img src="./images/sololearn.webp" height="47px" width="47px" alt=""
+        /></a>
         <a href="https://github.com/Anisha777" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
-        <a href="https://www.linkedin.com/in/anisha-dhakal-231549213/" target="_blank"><i class="fab fa-linkedin" ></i></a>
+        <a
+          href="https://www.linkedin.com/in/anisha-dhakal-231549213/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
     </section>
     <footer>
@@ -173,5 +249,7 @@
     <script src="./js/particles.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
