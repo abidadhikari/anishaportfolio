@@ -4,29 +4,39 @@
     width: 90%;
     font-size: x-large;
   }
-  
 }
 
 @media screen and (max-width: 600px) {
   header {
     width: 80%;
   }
-  header{
+  header {
     right: 10vw;
+  }
+  .contact-container {
+    width: 90%;
   }
 }
 
-
-@media screen and (max-width:816px) {
-    nav{
-        display: none;
-    }
-    .burger{
-        display: block;
-
-    }
-    .langcontainer{
-      width: 90%;
-    }
+@media screen and (max-width: 816px) {
+  nav {
+    display: none;
   }
-  
+  .burger {
+    display: block;
+  }
+  .langcontainer {
+    width: 90%;
+  }
+  .imgblock{
+    display: none;
+  }
+}
+@media screen and (max-width:1000px) {
+  .imgblock{
+    display: none;
+  }
+  .formblock{
+    width: 100%;
+  }
+}
